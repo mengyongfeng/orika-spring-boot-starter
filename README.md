@@ -68,7 +68,7 @@ public class ObjectToObjectConverter extends CustomConverter<Object, Object> {
 ## Using MappingContext 
 ```java
 @RestController
-public class Demo
+public class Demo {
 
     @Autowired
     MappingContextFactory mappingContextFactory;
@@ -85,5 +85,5 @@ public class Demo
         mpc.setProperty("key1", "value1");
 		return mapperFacade.map(dtoA, DtoB.class, mpc);
 	}
-
+}
 ```
